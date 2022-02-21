@@ -35,13 +35,13 @@
   transform: translateY(100px);
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .cardContainer .card:hover .face.face1 {
     background: white;
     transform: translateY(0);
   }
 }
-@media (hover: none) {
+@media (hover: none), (pointer: coarse) {
   .cardContainer .card.viewport-animation .face.face1 {
     background: white;
     transform: translateY(0);
@@ -53,12 +53,12 @@
   transition: 0.5s;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .cardContainer .card:hover .face.face1 .content {
     opacity: 1;
   }
 }
-@media (hover: none) {
+@media (hover: none), (pointer: coarse) {
   .cardContainer .card.viewport-animation .face.face1 .content {
     opacity: 1;
   }
@@ -98,17 +98,14 @@
   transform: translateY(-100px);
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .cardContainer .card:hover .face.face2 {
     transform: translateY(0);
   }
 }
-@media (hover: none) {
+@media (hover: none), (pointer: coarse) {
   .cardContainer .card.viewport-animation .face.face2 {
     transform: translateY(0);
-  }
-  .cardContainer .card.viewport-animation .face.face1 .content {
-    opacity: 1;
   }
 }
 
